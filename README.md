@@ -1,2 +1,2 @@
 # INDIA-MART
-Hello! Team 6.
+Hello! Team 6. This is our first project with collaboration.
