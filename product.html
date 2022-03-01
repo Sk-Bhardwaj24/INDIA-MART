@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <style>
+            #border{
+                border-radius: 0px;
+                /* background: #e0e0e0; */
+                background: white;
+                box-shadow:  35px 35px 99px #bebebe,
+                            -35px -35px 99px #ffffff;
+            }
+            h2, p{
+                color: #2e3192;
+            }
+            h3{
+                color: #777;
+            }
+            h2, p, h3{
+                padding-left: 20px;
+            }
+            #images{
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 20px;
+            }
+            div > img{
+                border: 1px solid rgb(221, 218, 218);
+                margin-right: 20px;
+                width: 231px;
+                height: 231px;
+            }
+            img + p{
+                font-size: large;
+                color: black;
+            }
+            button{
+                width: 150px;
+                height: 40px;
+                border: 1px solid #2e3192;
+                color: #2e3192;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Products & Services</h1>
+        <div id="border">
+            <h2>Makeup</h2>
+            <h3>Offering you a complete choice of products which include Foundation, Compact, Pan Cake Foundation and Pan Stick Foundation.</h3>
+            <p>view more</p>
+            <div id="flex">
+                <div id="images">
+                    <div id="container">
+                        <img src="https://3.imimg.com/data3/BX/CS/MY-3792183/foundation-250x250.jpg">
+                        <p>Foundation</p>
+                    </div>
+                    <div id="container">
+                        <img src="https://3.imimg.com/data3/YL/EJ/MY-3792183/01-250x250.jpg">
+                        <p>Compact</p>
+                    </div>
+                    <div id="container">
+                        <img src="https://3.imimg.com/data3/VL/AM/MY-3792183/pan-cake-250x250.jpg">
+                        <p>Pan Cake Foundation</p>
+                    </div>
+                    <div id="container">
+                        <img src="https://3.imimg.com/data3/LX/OI/MY-3792183/pan-stick-250x250.jpg">
+                        <p>pan Stick Foundation</p>
+                        <button>View more details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        
+
+    </script>
+</html>
