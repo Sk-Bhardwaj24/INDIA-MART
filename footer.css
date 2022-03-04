@@ -49,8 +49,8 @@
 }
 
 #f_direction{
-    color: #4996e8;
-    border: 2px solid red;
+    color: #4996e8 !important;
+    /* border: 2px solid red; */
     font-size: small;
 }
 
@@ -60,8 +60,8 @@
 }
 
 .f_sms{
-    background-color: #02625a;
-    border: 1px solid #02625a;
+    background-color: #00a699;
+    border: 1px solid #038379;
     color: white;
     cursor: pointer;
 }
@@ -116,9 +116,87 @@
     padding: 0rem 0.5rem;
     text-align: center;
 }
+
 #f_message button{
     margin: 0.5rem;
     width: 10rem;
     margin: auto;
     height: 2.5rem;
+}
+
+#f_box{
+    display: flex;
+}
+
+#f_2foot{
+    padding: 2rem;
+}
+
+#f_box{
+    margin-top: 1rem;
+}
+.f_card{
+    /* border: 2px solid red; */
+    max-width: 8rem;
+    margin-right: 0.5rem;
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    background-color: #e9eaec;
+}
+
+.f_card img{
+    width: 100%;
+    max-height: 8rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.f_card div{
+    margin: 0.5rem;
+    line-height: 1.3rem;
+}
+
+.f_card div h3{
+    font-size: 15px;
+}
+
+.f_blue{
+    color: #2e3192;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.f_card .f_sms a{
+    color: white;
+    text-decoration: none;
+}
+
+.f_card .f_sms{
+    width: 100%;
+    border-radius: 2rem;
+    height: 1.5rem;
+}
+
+.f_company{
+    color: black;
+    text-decoration: none;
+    font-size: small;
+}
+
+#f_3foot{
+    position: relative;
+}
+#f_verified{
+    position: absolute;
+    left: 15rem;
+    border: 1px solid indigo;
+    width: 35rem;
+    height: 30rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 4px grey;
+}
+
+.f_verified_box{
+    display: flex;
 }
