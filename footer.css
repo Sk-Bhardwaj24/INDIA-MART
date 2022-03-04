@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#f_start{
+    background-color: rgb(45,49,146);
+    color: white;
+    font-size: 1.6rem;
+    padding: 0.6rem;
+    font-weight: 700;
+}
+
+#f_detail{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 1rem;
+    background-color: rgb(248,248,248);
+}
+
+#f_detail > div{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+    font-size: 1rem;
+}
+
+#f_detail h1{
+    font-size: 1.6rem;
+}
+
+#f_detail a{
+    text-decoration: none;
+    color: black;
+}
+
+#f_company{
+    position: relative;
+}
+
+#f_share{
+    position: absolute;
+    bottom: 0;
+}
+
+#f_direction{
+    color: #4996e8;
+    border: 2px solid red;
+    font-size: small;
+}
+
+.f_sms, .f_email{
+    height: 2.5rem;
+    width: 10rem;
+}
+
+.f_sms{
+    background-color: #02625a;
+    border: 1px solid #02625a;
+    color: white;
+    cursor: pointer;
+}
+
+.f_email{
+    border: 1px solid #02a699;
+    color: #02a699;
+    background-color: white;
+    cursor: pointer;
+}
+
+#f_message{
+    background-color: white;
+    border: 2px solid rgb(234,234,234);
+    padding: 0.5rem 2rem;
+}
+
+#f_message > div{
+    margin: 1rem 0rem;
+    /* border: 1px solid #02a699; */
+}
+
+#f_message input{
+    height: 3rem;
+    width: 100%;
+}
+
+#f_phone, #f_details{
+    position: relative;
+}
+
+#f_phone h5{
+    /* border: 1px solid red; */
+    position: absolute;
+    font-weight: 400;
+    top: 1rem;
+    left: 1rem;
+    z-index: 2;
+    background-color: white;
+    padding: 0rem 0.5rem;
+    text-align: center;
+}
+
+#f_details h5{
+    /* border: 1px solid red; */
+    position: absolute;
+    font-weight: 400;
+    top: -0.7rem;
+    left: 1rem;
+    z-index: 2;
+    background-color: white;
+    padding: 0rem 0.5rem;
+    text-align: center;
+}
+#f_message button{
+    margin: 0.5rem;
+    width: 10rem;
+    margin: auto;
+    height: 2.5rem;
+}
