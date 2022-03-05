@@ -110,14 +110,14 @@ const navbar = () => {
           <div id="message"><a href="masaischool.com">Messages</a></div>
           <div id="signin">
           
-          <a   onclick="displaysign()"
+          <a  id="linksign"   onclick="displaysign()"
             >sign in <i style="margin-left: 2px" class="arrow1 down"></i
           ></a>
     
             <div id="signinpopup">
               <div id="signinpopup1">
                 <button  onclick="displaysign()">Sign In</button>
-                <p>New to IndiaMART? &nbsp Join Now</p>
+                <p  id="signcomment">New to IndiaMART? &nbsp Join Now</p>
               </div>
               <div id="hrline"></div>
               <br />
@@ -241,10 +241,10 @@ const navbar = () => {
           
            <div id="modal3">
          
-            <input type="tel" placeholder="Enter your Mobile Number"/>
+            <input type="tel"  id="scriteria"  placeholder="Enter your Mobile Number"/>
           </div>
           <div id="buttonsigndiv" >
-          <a href="#" class="buttonsign">Submit</a>
+          <a href="#" onclick="submitsign()" class="buttonsign">Submit</a>
         </div>
       </div>
       <div Id="signdivor">OR</div>

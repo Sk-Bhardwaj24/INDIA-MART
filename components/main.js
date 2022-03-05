@@ -105,6 +105,19 @@ function closesign() {
 function changecountrycode() {
   document.querySelector("#countryflag").style.display = "flex";
 }
+function submitsign() {
+  let result = document.getElementById("scriteria").value;
+  let resu = document.getElementById("signcomment");
+  if (result == 8210673961) {
+    let link = document.getElementById("linksign");
+    link.textContent = "Team six";
+    alert("Logged In");
+  } else {
+    alert("please register first");
+  }
+  closesign();
+  resu.textContent = "Team six";
+}
 
 // document.querySelector(".signopen").addEventListener("click", function () {
 //   document.querySelector(".bg-modal").style.display = "flex";
