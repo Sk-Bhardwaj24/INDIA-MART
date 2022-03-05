@@ -2,10 +2,12 @@
   display: flex;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
-  position: sticky;
+  position: absolute;
   height: 35px;
   top: 0px;
+  /* z-index: 1; */
   background-color: rgb(46, 49, 146);
+  min-width: 100%;
 }
 
 #nav > div:nth-child(1) {
@@ -696,7 +698,8 @@
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
   height: 100%;
-  position: absolute;
+  /* margin-top: 25%; */
+  position: fixed;
   top: 0;
   display: none;
   /* display: flex; */
@@ -712,6 +715,7 @@
 }
 
 .modal-contents {
+  margin-top: -30px;
   height: 310px;
   width: 460px;
   background-color: white;
@@ -774,47 +778,105 @@ input {
   width: 55px;
   max-height: 55px;
 }
-#modal1 > select {
-  margin-top: 25px;
+#modal1 > .selector {
+  margin-top: 26px;
   min-width: 55px;
   box-sizing: border-box;
-  min-height: 55px;
-  border: 20px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  box-shadow: 1px 1px gray;
-  border-color: rgb(219, 27, 27);
+  min-height: 53px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 2px 1px 5px 1px rgb(189, 199, 216);
+
+  padding-top: 18px;
 }
-option {
-  border-color: rgb(219, 27, 27);
+#selector {
+  justify-content: center;
+  align-items: center;
+}
+#modal1 :hover {
+  cursor: pointer;
+}
+#selector img {
+  width: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+#countryflag {
+  width: 300px;
+  height: 100%;
+  height: 150px;
+  margin-left: -20px;
+  margin-top: 12px;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  overflow-y: scroll;
+  box-shadow: 1px 2px 6px 1px rgb(0 0 0 / 15%);
+}
+#countryflag > ul {
+  position: relative;
+  /* width: 400px; */
+  position: absolute;
+  z-index: 1;
+  list-style: none;
+  margin-left: -20px;
+  background-color: white;
+}
+#countryflag > ul img {
+  width: 25px;
+  height: 15px;
+}
+#countryflag > ul li {
+  display: flex;
+  height: 35px;
+  align-items: center;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+#countryflag > ul li:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+#countryflag > ul li > p {
+  padding-left: 20px;
+  margin-top: 10px;
 }
 #modal2 {
-  margin-top: 25px;
-  min-width: 56px;
+  margin-top: 26px;
+  min-width: 55px;
+  margin-left: 5px;
   /* border: 1px solid black; */
-  background-color: rgb(241, 241, 241);
+  box-sizing: border-box;
+  background-color: rgb(233, 234, 236);
   align-items: center;
   justify-content: center;
-  min-height: 51px;
-  max-height: 51px;
-  border-top: 2px solid rgb(229, 229, 229);
-  border-bottom: 2px solid rgb(229, 229, 229);
-  box-shadow: 1px 1px gray;
+  min-height: 53px;
+  max-height: 54px;
+  border-top: 2px;
+  border-bottom: 10px;
+  box-shadow: 1px 1px 1px 1.2px rgb(189, 199, 216);
+  border-top-color: #dddfe5;
+  border-bottom-color: #3b3838;
+}
+textarea:focus,
+input:focus {
+  outline: none;
 }
 #modal3 > input {
   margin-top: 25px;
-  margin-left: -2px;
+  margin-left: 0px;
   min-width: 320px;
   min-height: 40px;
   min-height: 55px;
+  font-weight: bold;
   box-sizing: border-box;
-  border: 1px solid #ccc;
-
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  /* border-color: rgb(229,229,229); */
-
-  box-shadow: 1px 1px gray;
+  box-shadow: 1px 1px 1px 0px rgb(189, 199, 216);
+  border-left-color: #fff;
+  border-top-color: #dddfe5;
 }
 #buttonsigndiv {
   margin-top: 20px;
@@ -835,6 +897,9 @@ option {
   font-size: 15px;
   font-weight: 600;
   color: white;
+}
+#buttonsigndiv:hover {
+  cursor: pointer;
 }
 #signdivor {
   /* margin-top:-0.8rem; */
@@ -880,7 +945,9 @@ option {
   font-weight: 600;
   justify-content: center;
 }
-
+#s-d-g:hover {
+  cursor: pointer;
+}
 @media only screen and (min-width: 667px) and (max-width: 1200px) {
   #signinpopup {
     margin-top: -10px;

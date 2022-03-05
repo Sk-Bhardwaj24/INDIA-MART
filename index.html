@@ -8,52 +8,61 @@
     <!-- <script src="./scriptspopup.js"></script> -->
 
     <link rel="stylesheet" href="./compstyle/footer.css">
+    <link rel="stylesheet" href="./compstyle/page.css">
     <script src="https://kit.fontawesome.com/a982eeda10.js" crossorigin="anonymous"></script>
 
-    <title>Document</title>
+    <title>India Mart</title>
   </head>
   <style>
     body {
       margin: 0px;
       background-color: #E9EAEC;
     }
+    #header {
+      position: sticky;
+      top: 0px;
+    }
+    #main2 {
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+      padding: 40px;
+    }
   </style>
   <body>
     <div id="header"></div>
+    <div id = 'f_modal'></div>
     <div id = 'footer'></div>
   </body>
 </html>
 <script type="module">
-  import navbar from "./components/scripts.js";
+  import navbar from "./components/navbar.js";
   import footer from './components/footer.js';
-  console.log(footer);
-  
-  let foot = document.getElementById('footer');
-  foot.innerHTML = footer();
 
-  // import { closeopen } from "./components/scriptspopup.js";
-  let head = document.getElementById("header");
-  head.innerHTML = navbar();
-  document.querySelector(".signopen").addEventListener("click", function () {
-    document.querySelector(".bg-modal").style.display = "flex";
-  });
-  document.querySelector(".signopen1").addEventListener("click", function () {
-    document.querySelector(".bg-modal").style.display = "flex";
-  });
-
-  document.querySelector(".close").addEventListener("click", function () {
-    document.querySelector(".bg-modal").style.display = "none";
-  });
+// import { closeopen } from "./components/scriptspopup.js";
+let head = document.getElementById("header");
+head.innerHTML = navbar();
 
 //   -----------------------------for the working of footer-------------------------------------------------------------
 
+    let foot = document.getElementById('footer');
+    foot.innerHTML = footer();
+
     let submit = document.getElementById('f_sms');
+    console.log(submit)
+    let f_submit_pop = document.getElementById('f_submit_pop');
+
+    let f_modal = document.getElementById('f_modal');
+    f_modal.append(f_submit_pop);
+
     submit.addEventListener('click', () => {
         console.log(2);
-        let footer = document.getElementById('footer');
-        console.log(footer)
-        footer.style.filter = 'blur(8x)';
-        let f_submit_pop = document.getElementById('f_submit_pop');
+        // console.log(footer)
+        f_modal.style.display = 'block';
+        document.body.style.backgroundColor = 'rgba(red, red, red, 0.3)';
+        // footer.style.filter = 'blur(8x)';
         f_submit_pop.style.visibility = 'visible';
     });
 </script>
+<script src="./components/main.js"></script>
+

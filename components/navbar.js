@@ -109,14 +109,15 @@ const navbar = () => {
           </div>
           <div id="message"><a href="masaischool.com">Messages</a></div>
           <div id="signin">
-            <a  class="signopen"
-              >sign in <i style="margin-left: 2px" class="arrow1 down"></i
-            ></a>
+          
+          <a  id="linksign"   onclick="displaysign()"
+            >sign in <i style="margin-left: 2px" class="arrow1 down"></i
+          ></a>
     
             <div id="signinpopup">
               <div id="signinpopup1">
-                <button  class="signopen1">Sign In</button>
-                <p>New to IndiaMART? &nbsp Join Now</p>
+                <button  onclick="displaysign()">Sign In</button>
+                <p  id="signcomment">New to IndiaMART? &nbsp Join Now</p>
               </div>
               <div id="hrline"></div>
               <br />
@@ -163,27 +164,87 @@ const navbar = () => {
       <div class="modal-contents">
         <div id="bg-modal2">
           <div id="modal-div"><div>Sign In</div>
-          <div  ><span class="close">+</span></div>
+          <div  ><span class="close" onclick="closesign()">+</span></div>
          
         </div>
         <!-- <div class="close">+</div> -->
-        <img src="https://richardmiddleton.me/comic-100.png" alt="" />
+       
          <div id="modal-div2">
-           <div id="modal1" >
-             <select>
-               <option data-img-src"></option>
-               <option>122</option>
-               <option>122</option>
-             </select>
-            </div>
-             <div id="modal2">91</div>
+         <div id="modal1" >
+         <div class="selector">
+           <div id="selector" onclick="changecountrycode()">
+         
+             <img id="cmg" src="./image/India.png">
+         
+             <!-- <p>Select</p> -->
+           </div>
+           <div id="countryflag">
+         
+         <ul>
+           <li onclick="changecode(91)">
+             <img id="code1" src="./image/India.png">
+             <p>India</p>
+           </li>
+           <li onclick="changecode(1)"">
+             <img  id="code2" src="./image/america.png">
+             <p>United State of America</p>
+           </li>
+           <li  onclick="changecode(55)">
+             <img id="code3" src="./image/brazil.png">
+             <p>Canada</p>
+           </li>
+           <li  onclick="changecode(86)">
+             <img  id="code4"src="./image/china.png">
+             <p>China</p>
+           </li>
+           <li  onclick="changecode(44)">
+             <img  id="code5" src="./image/england.png">
+             <p>England</p>
+           </li>
+           <li  onclick="changecode(33)">
+             <img  id="code6" src="./image/france1.png">
+             <p>France</p>
+           </li>
+           <li  onclick="changecode(92)">
+             <img  id="code7" src="./image/pakistan.png">
+             <p>Pakistan</p>
+           </li>
+           <li  onclick="changecode(7)">
+             <img  id="code8" src="./image/Russia-flag.png">
+             <p>Russia</p>
+           </li>
+           <li  onclick="changecode(966)">
+             <img  id="code9"src="./image/saudi1.png">
+             <p>Saudi Arabia</p>
+           </li>
+           <li  onclick="changecode(82)">
+             <img  id="code10" src="./image/southkorea.png">
+             <p>South Korea</p>
+           </li>
+           <li  onclick="changecode(380)">
+             <img  id="code11" src="./image/ukraine.png">
+             <p>Ukraine</p>
+           </li>
+           <li  onclick="changecode(81)">
+             <img  id="code12" src="./image/zapan.png">
+             <p>Zapan</p>
+           </li>
+          
+         </ul>
+         
+         
+           </div>
+           
+         </div> 
+         </div>
+             <div id="modal2"><p id="modal2p">+91</p></div>
           
            <div id="modal3">
          
-            <input type="tel" placeholder="Enter your Mobile Number"/>
+            <input type="tel"  id="scriteria"  placeholder="Enter your Mobile Number"/>
           </div>
           <div id="buttonsigndiv" >
-          <a href="#" class="buttonsign">Submit</a>
+          <a href="#" onclick="submitsign()" class="buttonsign">Submit</a>
         </div>
       </div>
       <div Id="signdivor">OR</div>
