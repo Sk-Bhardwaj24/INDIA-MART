@@ -6,19 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./compstyle/main.css" id="rel" />
     <!-- <script src="./scriptspopup.js"></script> -->
+
+    <link rel="stylesheet" href="./compstyle/footer.css">
+    <script src="https://kit.fontawesome.com/a982eeda10.js" crossorigin="anonymous"></script>
+
     <title>Document</title>
   </head>
   <style>
     body {
       margin: 0px;
+      background-color: #E9EAEC;
     }
   </style>
   <body>
     <div id="header"></div>
+    <div id = 'footer'></div>
   </body>
 </html>
 <script type="module">
   import navbar from "./components/scripts.js";
+  import footer from './components/footer.js';
+  console.log(footer);
+  
+  let foot = document.getElementById('footer');
+  foot.innerHTML = footer();
+
   // import { closeopen } from "./components/scriptspopup.js";
   let head = document.getElementById("header");
   head.innerHTML = navbar();
@@ -32,4 +44,16 @@
   document.querySelector(".close").addEventListener("click", function () {
     document.querySelector(".bg-modal").style.display = "none";
   });
+
+//   -----------------------------for the working of footer-------------------------------------------------------------
+
+    let submit = document.getElementById('f_sms');
+    submit.addEventListener('click', () => {
+        console.log(2);
+        let footer = document.getElementById('footer');
+        console.log(footer)
+        footer.style.filter = 'blur(8x)';
+        let f_submit_pop = document.getElementById('f_submit_pop');
+        f_submit_pop.style.visibility = 'visible';
+    });
 </script>

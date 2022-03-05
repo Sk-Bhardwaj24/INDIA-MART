@@ -5,6 +5,11 @@
     font-family: sans-serif;
 }
 
+#footer{
+    max-width: 85%;
+    margin: auto;
+}
+
 #f_start{
     background-color: rgb(45,49,146);
     color: white;
@@ -43,6 +48,10 @@
     position: relative;
 }
 
+#f_add_box{
+    display: grid;
+    grid-template-columns: auto auto;
+}
 #f_share{
     position: absolute;
     bottom: 0;
@@ -90,26 +99,31 @@
 }
 
 #f_phone, #f_details{
+    /* border: 1px solid green; */
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#f_phone h5{
+#f_phone select, #f_phone input:nth-child(4){
+    /* border: 1px solid red; */
+    height: 3rem;
+    flex: 0.5;
+    min-width: 3rem;
+    max-width: 3rem;
+}
+
+#f_phone input{
+    /* border: 1px solid red; */
+    flex: 3;
+}
+
+#f_phone h5, #f_details h5{
     /* border: 1px solid red; */
     position: absolute;
     font-weight: 400;
-    top: 1rem;
-    left: 1rem;
-    z-index: 2;
-    background-color: white;
-    padding: 0rem 0.5rem;
-    text-align: center;
-}
-
-#f_details h5{
-    /* border: 1px solid red; */
-    position: absolute;
-    font-weight: 400;
-    top: -0.7rem;
+    top: 0.3rem;
     left: 1rem;
     z-index: 2;
     background-color: white;
@@ -199,4 +213,39 @@
 
 .f_verified_box{
     display: flex;
+}
+
+/* --------------------------------------------------------------------------- */
+
+#f_submit_pop{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    width: 50rem;
+    height: 30rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    background: white;
+    z-index: 5;
+    border-radius: 5px;
+}
+
+#f_submit_pop1{
+    border: 2px solid red;
+    /* max-width: 30%; */
+    padding: 1rem;
+    flex: 1;
+    background-color: #F8F8F8;
+}
+
+#f_submit_pop1 div{
+    padding: 2.5rem;
+}
+#f_submit_pop2{
+    border: 2px solid green;
+    flex: 3;
+    /* max-width: 60%; */
 }
