@@ -18,18 +18,10 @@
   </body>
 </html>
 <script type="module">
-  import navbar from "./components/scripts.js";
+  import navbar from "./components/navbar.js";
+
   // import { closeopen } from "./components/scriptspopup.js";
   let head = document.getElementById("header");
   head.innerHTML = navbar();
-  document.querySelector(".signopen").addEventListener("click", function () {
-    document.querySelector(".bg-modal").style.display = "flex";
-  });
-  document.querySelector(".signopen1").addEventListener("click", function () {
-    document.querySelector(".bg-modal").style.display = "flex";
-  });
-
-  document.querySelector(".close").addEventListener("click", function () {
-    document.querySelector(".bg-modal").style.display = "none";
-  });
 </script>
+<script src="./components/main.js"></script>
