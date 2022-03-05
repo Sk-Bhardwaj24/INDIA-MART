@@ -6,38 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./compstyle/main.css" id="rel" />
     <!-- <script src="./scriptspopup.js"></script> -->
-    <title>Document</title>
-    <style>
-      body {
-        margin: 0px;
-      }
-      #header {
-        position: sticky;
-        top: 0px;
-      }
-      img {
-        /* float: left; */
-        height: 400px;
-        width: 400px;
-      }
-      #main2 {
-        display: flex;
-        flex-direction: column;
-        gap: 80px;
-        padding: 40px;
-      }
-    </style>
-  </head>
 
+    <link rel="stylesheet" href="./compstyle/footer.css">
+    <link rel="stylesheet" href="./compstyle/page.css">
+    <script src="https://kit.fontawesome.com/a982eeda10.js" crossorigin="anonymous"></script>
+
+    <title>India Mart</title>
+  </head>
+  <style>
+    body {
+      margin: 0px;
+      background-color: #E9EAEC;
+    }
+    #header {
+      position: sticky;
+      top: 0px;
+    }
+    #main2 {
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+      padding: 40px;
+    }
+  </style>
   <body>
     <div id="header"></div>
+    <div id = 'f_modal'></div>
+    <div id = 'footer'></div>
+    <div id = 'main_footer'></div>
   </body>
 </html>
+<script src="./components/main.js"></script>
 <script type="module">
   import navbar from "./components/navbar.js";
+  import {footer, main_footer} from './components/footer.js';
 
   // import { closeopen } from "./components/scriptspopup.js";
   let head = document.getElementById("header");
   head.innerHTML = navbar();
+
+  //   -----------------------------for the working of footer------------------------------------------------------------- 
+
+    let foot = document.getElementById('footer');
+    foot.innerHTML = footer();
+
+    let main_foot = document.getElementById('main_footer');
+    main_foot.innerHTML = main_footer();
+
+    let submit = document.getElementById('f_sms');
+    console.log(submit)
+    let f_submit_pop = document.getElementById('f_submit_pop');
+
+    let f_modal = document.getElementById('f_modal');
+    f_modal.append(f_submit_pop);
+
+    submit.addEventListener('click', () => {
+        console.log(2);
+        f_modal.style.display = 'block';
+        f_submit_pop.style.visibility = 'visible';
+    });
 </script>
 <script src="./components/main.js"></script>
+
