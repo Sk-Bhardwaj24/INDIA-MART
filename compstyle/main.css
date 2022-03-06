@@ -2,8 +2,9 @@
   display: flex;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
-  position: absolute;
-  height: 35px;
+  position: fixed;
+  height: 55px;
+  z-index: 1000;
   top: 0px;
   /* z-index: 1; */
   background-color: rgb(46, 49, 146);

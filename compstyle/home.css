@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#ho_about{
+    text-align: center;
+}
+
+#ho_line{
+    border: 2px solid red;
+}
+.ho_line1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ho_line1 > div{
+    border: 2px solid black;
+    display: flex;
+}

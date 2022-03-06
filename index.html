@@ -31,6 +31,7 @@
   </style>
   <body>
     <div id="header"></div>
+    <div id = 'sub_head'></div>
     <div id = 'f_modal'></div>
     <div id = 'footer'></div>
     <div id = 'main_footer'></div>
@@ -39,11 +40,17 @@
 <script src="./components/main.js"></script>
 <script type="module">
   import navbar from "./components/navbar.js";
-  import {footer, main_footer} from './components/footer.js';
+  import {subHead, footer, main_footer} from './components/footer.js';
 
   // import { closeopen } from "./components/scriptspopup.js";
   let head = document.getElementById("header");
   head.innerHTML = navbar();
+
+
+  //------------------------------for sub header------------------------------------------------------------------------------
+
+  let sub_head = document.getElementById("sub_head");
+  sub_head.innerHTML = subHead();  
 
   //   -----------------------------for the working of footer------------------------------------------------------------- 
 
