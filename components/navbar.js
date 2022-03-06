@@ -168,7 +168,7 @@ const navbar = () => {
          
         </div>
         <!-- <div class="close">+</div> -->
-       
+        <p id="mobno">Mobile Number</p>
          <div id="modal-div2">
          <div id="modal1" >
          <div class="selector">

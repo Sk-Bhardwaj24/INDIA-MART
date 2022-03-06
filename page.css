@@ -1,0 +1,100 @@
+#border {
+  border-radius: 0px;
+  background: white;
+  box-shadow: 0.5px 0.5px 3px 3px rgb(236, 234, 234);
+  width: 88%;
+  padding-right: 30px;
+
+  margin-left: 15px;
+
+  /* z-index: -1; */
+}
+.layout {
+  border-radius: 0px;
+  background: white;
+  box-shadow: 1px 1px 5px 5px #f1f1ea;
+}
+.layout1 {
+  border-radius: 0px;
+  background: white;
+}
+h2,
+h4 {
+  padding-left: 20px;
+  color: #2e3192;
+}
+h2 {
+  padding-top: 10px;
+}
+h3 {
+  color: rgb(133, 130, 130);
+  font-size: 18px;
+  font-weight: 80;
+}
+h1 {
+  padding-left: 30px;
+}
+h2,
+h3 {
+  padding-left: 20px;
+}
+#images {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+#container > img {
+  border: 1px solid rgb(221, 218, 218);
+  margin-right: 30px;
+
+  width: 140px;
+  height: 200px;
+  padding: 30px 45px 30px 45px;
+}
+#container > img {
+  border: 1px solid rgb(221, 218, 218);
+  margin-right: 30px;
+
+  width: 140px;
+  height: 200px;
+  padding: 30px 45px 30px 45px;
+}
+img + p {
+  font-size: large;
+  color: black;
+}
+button {
+  width: 125px;
+  height: 40px;
+  border: 1px solid #2e3192;
+  color: #2e3192;
+  margin-bottom: 20px;
+}
+button:hover {
+  cursor: pointer;
+}
+.button-gap1 {
+  margin-left: 30%;
+}
+.button-gap2 {
+  margin-left: 130%;
+}
+.button-gap3 {
+  margin-left: 230%;
+}
+.button-gap4 {
+  margin-left: 330%;
+}
+#container:hover {
+  box-shadow: 0.2px 4px 5px 5px rgb(0, 0, 0.1);
+  /* position: sticky; */
+  border-radius: 20px;
+  transition: 0.4s ease-in-out;
+}
+.cc:hover {
+  box-shadow: 0.2px 4px 5px 5px rgb(0, 0, 0.1);
+  /* position: sticky; */
+  border-radius: 20px;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
