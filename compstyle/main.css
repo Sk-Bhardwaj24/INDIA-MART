@@ -536,7 +536,7 @@
   margin: 0 auto 0 auto;
   text-align: center;
 }
-#signinpopup1 > button {
+#signinpopup1 button {
   width: 6rem;
   align-items: center;
   height: 2rem;
