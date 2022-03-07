@@ -23,7 +23,7 @@ const subHead = () => {
             <div><h3><a href="index.html">Home</a></h3></div>
             <div><h3><a href="page.html">Products & Services</a></h3></div>
             <div><h3><a >About us</a></h3></div>
-            <div><h3 href="contactus.html">Contact Us</h3></div>
+            <div><h3><a href="contactus.html">Contact Us</a></h3></div>
         </div>
         <div><button class = 'h_sub2_btn'>Send Email</button></div>
     </div>
