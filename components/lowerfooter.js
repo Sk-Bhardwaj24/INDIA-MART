@@ -54,4 +54,4 @@ function lfooter() {
   </div>
 </div>`;
 }
-export default lfooter;
+export { lfooter };

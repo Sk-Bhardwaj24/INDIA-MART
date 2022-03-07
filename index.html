@@ -6,82 +6,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="/image/fevicolon.png" />
     <link rel="stylesheet" href="./compstyle/main.css" id="rel" />
+    <link rel="stylesheet" href="./compstyle/home.css" id="rel" />
+    <link rel="stylesheet" href="./compstyle/footer.css" id="rel" />
+    <link rel="stylesheet" href="./compstyle/subnav.css" id="rel" />
     <script src="./scriptspopup.js"></script>
     <script
       src="https://kit.fontawesome.com/a982eeda10.js"
       crossorigin="anonymous"
     ></script>
-
-    <link rel="stylesheet" href="./compstyle/footer.css" />
-    <!-- <link rel="stylesheet" href="./compstyle/page.css" /> -->
-    <script
-      src="https://kit.fontawesome.com/a982eeda10.js"
-      crossorigin="anonymous"
-    ></script>
-
     <title>Blue Heaven Cosmetics (P) Ltd</title>
+    <style>
+      body {
+        background-color: #e9eaec;
+        margin: 0px;
+      }
+      #header {
+        position: sticky;
+        top: 0px;
+      }
+      #mar-t {
+        margin: 7% 6.5% 5% 6.5%;
+        background-color: white;
+        padding-bottom: 70px;
+      }
+      #footer2 {
+        margin-top: 40px;
+      }
+      #subnav {
+        padding-top: 0px;
+        margin-top: -50px;
+        max-height: 130px;
+        box-sizing: border-box;
+        /* top: 50px; */
+        /* position: sticky;
+        top: 0px; */
+        z-index: 0;
+        background-color: white;
+      }
+    </style>
   </head>
-  <style>
-    body {
-      margin: 0px;
-      background-color: #e9eaec;
-    }
-    #header {
-      position: sticky;
-      top: 0px;
-    }
-    #footer {
-      display: flex;
-      flex-direction: column;
-
-      padding: 40px;
-      /* position: absolute;
-      z-index: -1;
-      box-sizing: border-box; */
-    }
-    #lower {
-      position: fixed;
-      margin-top: 100px;
-      left: 0px;
-      bottom: 0px;
-      /* height: 30px; */
-      width: 100%;
-      /* background: #999; */
-    }
-  </style>
   <body>
-    <div id="header"></div>
-    <div id="footer"></div>
+    <div id="header5"></div>
+    <div id="mar-t">
+      <div id="subnav"></div>
+      <!-- ***************************************************************************************************** -->
+      <div id="ho_about_main">
+        <div id="ho_about">
+          <h1>About Us</h1>
+          <p>
+            Blue Heaven Cosmetics was started in 1974 by two young brothers,
+            company MD's Mr.Charanjit Singh and Mr. Gurnam Singh with big dreams
+            and ambitions.
+          </p>
+          <p>
+            By virtue of their determination and commitment Blue Heaven
+            Cosmetics has been able to experience such an eventful journey
+            revolutionizing the Indian decorative cosmetics industry.
+          </p>
+          <a href="">+Read More</a>
+        </div>
+        <div id="ho_line">
+          <div class="ho_line1">
+            <div class="ho_line_box">
+              <div><i class="fa-solid fa-hand-holding-dollar"></i></div>
+              <div>
+                <p>Nature of Business</p>
+                <h3>Exporter and Manufacturer</h3>
+              </div>
+            </div>
+            <div class="ho_line_box">
+              <div><i class="fa-solid fa-building"></i></div>
+              <div>
+                <p>Year of Establishment</p>
+                <h3>1974</h3>
+              </div>
+            </div>
+            <div class="ho_line_box">
+              <div><i class="fa-solid fa-scale-balanced"></i></div>
+              <div>
+                <p>Legal Status of Firm</p>
+                <h3>Limited Company (Ltd./Pvt.Ltd.)</h3>
+              </div>
+            </div>
+            <div class="ho_line_box">
+              <div><i class="fa-solid fa-chart-line"></i></div>
+              <div>
+                <p>Annual Turnover</p>
+                <h3>Rs. 50 - 100 Crore</h3>
+              </div>
+            </div>
+          </div>
+          <div class="ho_line1">
+            <div class="ho_line_box">
+              <div><i class="fa-solid fa-chart-line"></i></div>
+              <div>
+                <p>Import Export Code (IEC)</p>
+                <h3>05040*****</h3>
+              </div>
+            </div>
+            <div class="ho_line_box">
+              <div><i class="fa-solid fa-file-invoice"></i></div>
+              <div>
+                <p>GST Number</p>
+                <h3>07AACCB1155C1ZB</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ******************************************************************************************************************** -->
+      <div id="footer2"></div>
+    </div>
+
     <div id="lower"></div>
-    <!-- <div id="footer"></div> -->
+    <!-- <img src="./image/america.png" />
+    <img src="./image/china.png" />
+    <img src="./image/canada.png" /> -->
   </body>
-</html>
-<script type="module">
-  import navbar from "./components/navbar.js";
-  import footer from "./components/footer.js";
-  import lfooter from "./components/lowerfooter.js";
-  // import { closeopen } from "./components/scriptspopup.js";
-  let head = document.getElementById("header");
-  head.innerHTML = navbar();
-
-  let foot = document.getElementById("footer");
-  foot.innerHTML = footer();
-
-  //   -----------------------------for the working of footer-------------------------------------------------------------
-
-  window.addEventListener("DOMContentLoaded", (event) => {
+  <script type="module">
+    import navbar from "./components/navbar.js";
+    import footer from "./components/footer.js";
+    import subHead from "./components/subnavbar.js";
+    import { lfooter } from "./components/lowerfooter.js";
+    let head1 = document.getElementById("header5");
+    head1.innerHTML = navbar();
+    let sub = document.getElementById("subnav");
+    sub.innerHTML = subHead();
+    let foot2 = document.getElementById("footer2");
+    foot2.innerHTML = footer();
     let lower = document.getElementById("lower");
     lower.innerHTML = lfooter();
-  });
 
-  document.querySelector(".f_sms").addEventListener("click", function () {
-    document.querySelector("#f_submit_pop").style.display = "flex";
-    let f_submit_pop = document.getElementById("f_submit_pop");
-    f_submit_pop.style.visibility = "visible";
-  });
-  document.querySelector(".close12").addEventListener("click", function () {
-    let f_submit_pop = document.getElementById("f_submit_pop");
-    f_submit_pop.style.visibility = "hidden";
-  });
-</script>
+    document.querySelector(".f_sms").addEventListener("click", function () {
+      document.querySelector("#f_submit_pop").style.display = "flex";
+      let f_submit_pop = document.getElementById("f_submit_pop");
+      f_submit_pop.style.visibility = "visible";
+    });
+
+    document.querySelector(".close12").addEventListener("click", function () {
+      let f_submit_pop = document.getElementById("f_submit_pop");
+      f_submit_pop.style.visibility = "hidden";
+    });
+  </script>
+</html>
 <script src="./components/main.js"></script>
