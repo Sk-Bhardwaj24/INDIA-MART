@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="/image/fevicolon.png" />
+    <link rel="stylesheet" href="./compstyle/main.css" id="rel" />
+    <!-- <link rel="stylesheet" href="./compstyle/home.css" id="rel" /> -->
+    <link rel="stylesheet" href="./compstyle/footer.css" id="rel" />
+    <link rel="stylesheet" href="./compstyle/subnav.css" id="rel" />
+    <script src="./scriptspopup.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a982eeda10.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <title>Contact us</title>
+
+    <style>
+      #c_container {
+        display: flex;
+        height: 60%;
+        margin: 5px;
+      }
+      #c_contact {
+        flex: 1.5;
+        border: 1px #efefef solid;
+        margin-left: 30px;
+      }
+      #c_reach {
+        flex: 1;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      #cc_contacts select,
+      #cc_contacts input {
+        height: 35px;
+      }
+
+      #cc_contacts textarea {
+        width: 90%;
+        height: 20%;
+      }
+      #cc_contacts p {
+        font-size: 18px;
+      }
+      #c_line {
+        padding-bottom: 2px;
+      }
+      #c_submit-button {
+        padding-left: 32%;
+        padding-top: 5%;
+      }
+      #cc_contacts button {
+        width: 200px;
+        height: 40px;
+        color: white;
+        font-weight: bold;
+        background-color: rgb(0, 166, 153);
+      }
+      .c_flex-box {
+        display: flex;
+        flex-wrap: wrap;
+        height: 40px;
+      }
+      #cc_contacts span {
+        margin-top: 4%;
+        color: rgb(110, 106, 106);
+      }
+      #c_space1 {
+        padding-left: 20px;
+      }
+      #c_color {
+        color: #068076;
+        font-weight: bold;
+      }
+      #c_dir-style {
+        padding-top: 5%;
+      }
+      #c_selector {
+        justify-content: center;
+        align-items: center;
+      }
+      #c_modal1 :hover {
+        cursor: pointer;
+      }
+      #c_selector img {
+        width: 25px;
+        justify-content: center;
+        align-items: center;
+      }
+      #c_countryflag {
+        width: 300px;
+        height: 100%;
+        height: 150px;
+        margin-left: -20px;
+        margin-top: 12px;
+        display: none;
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+        overflow-y: scroll;
+        box-shadow: 1px 2px 6px 1px rgb(0 0 0 / 15%);
+      }
+      #c_countryflag > ul {
+        position: relative;
+        /* width: 400px; */
+        position: absolute;
+        z-index: 1;
+        list-style: none;
+        margin-left: -20px;
+        background-color: white;
+      }
+      body {
+        background-color: #e9eaec;
+        margin: 0px;
+      }
+      #header {
+        position: sticky;
+        top: 0px;
+      }
+      #mar-t {
+        margin: 7% 6.5% 5% 6.5%;
+        background-color: white;
+        padding-bottom: 70px;
+      }
+      #footer2 {
+        margin-top: 40px;
+      }
+      #subnav {
+        padding-top: 0px;
+        margin-top: -50px;
+        max-height: 130px;
+        box-sizing: border-box;
+        /* top: 50px; */
+        /* position: sticky;
+        top: 0px; */
+        z-index: 0;
+        background-color: white;
+      }
+      @media all and (max-width: 900px) {
+        #c_container {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body id="cc_contacts">
+    <div id="header5"></div>
+    <div id="mar-t">
+      <div id="subnav"></div>
+      <div id=" #cc_contacts">
+        <div id="c_container">
+          <div id="c_contact">
+            <div id="c_space1">
+              <p>Contact us for more details</p>
+              <h3>Mobile Number</h3>
+              <input placeholder="enter your email..." />
+              <h3>Name</h3>
+              <input placeholder="enter your name..." />
+              <h3>Requirement Details</h3>
+              <textarea
+                placeholder="Additional details about your requirement"
+                style="padding-top: 1%"
+              ></textarea>
+              <div id="c_submit-button">
+                <button>Submit Requirement</button>
+              </div>
+            </div>
+          </div>
+          <div id="c_reach">
+            <div>
+              <h2>Reach Us</h2>
+              <div class="c_flex-box">
+                <span class="c_material-icons-outlined"> place</span>
+                <p>
+                  &nbsp; No. 39, DLF Industrial Area, Kirti Nagar, New
+                  Delhi-110019,<br />&nbsp; Delhi, India<br />
+                </p>
+              </div>
+              <div class="c_flex-box">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="c_material-icons-outlined"
+                >
+                  turn_right </span
+                ><br />
+                <!-- <p id="dir-style">&nbsp;Get Directions</p> -->
+                <a href="./" id="c_dir-style">Get directions</a>
+              </div>
+              <div class="c_flex-box">
+                <span class="c_material-icons-outlined">
+                  perm_contact_calendar
+                </span>
+                <p>&nbsp; Arvind Srivastava (Manager)</p>
+              </div>
+              <div class="c_flex-box">
+                <span class="c_material-icons-outlined"> settings_phone </span>
+                <p id="c_color">&nbsp; View Mobile Number</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer2"></div>
+    </div>
+    <div id="lower"></div>
+  </body>
+  <script type="module">
+    import navbar from "./components/navbar.js";
+    import footer from "./components/footer.js";
+    import subHead from "./components/subnavbar.js";
+    import { lfooter } from "./components/lowerfooter.js";
+    let head1 = document.getElementById("header5");
+    head1.innerHTML = navbar();
+    let sub = document.getElementById("subnav");
+    sub.innerHTML = subHead();
+    let foot2 = document.getElementById("footer2");
+    foot2.innerHTML = footer();
+    let lower = document.getElementById("lower");
+    lower.innerHTML = lfooter();
+
+    document.querySelector(".f_sms").addEventListener("click", function () {
+      document.querySelector("#f_submit_pop").style.display = "flex";
+      let f_submit_pop = document.getElementById("f_submit_pop");
+      f_submit_pop.style.visibility = "visible";
+    });
+
+    document.querySelector(".close12").addEventListener("click", function () {
+      let f_submit_pop = document.getElementById("f_submit_pop");
+      f_submit_pop.style.visibility = "hidden";
+    });
+  </script>
+</html>
+<script src="./components/main.js"></script>

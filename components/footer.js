@@ -1,37 +1,5 @@
-const subHead = () => {
-    return `<div id = 'h_sub_head_start'>
-    <div id = 'h_sub1'>
-        <div id = 'h_sub1_left'>
-            <div><img id = 'h_sub1_left_img' src="https://3.imimg.com/data3/HJ/OY/MY-3792183/blue-heaven-cosmetics-private-limited-logo-120x120.jpg" alt=""></div>
-            <div id = 'h_sub1_left2'>
-                <div><h1>Blue Heaven Cosmetics (P) Ltd</h1></div>
-                <div>
-                    <div><div class = 'h_sub1_left2_c1'><i class="fa-solid fa-location-dot"></i></div><p>Kirti Nagar, New Delhi, Delhi
-                    </p></div>
-                    <div><div id = 'h_sub1_left2_c2'><i class="fa-solid fa-circle-check"></div></i><p>GST</p><h4>07AACCB1155C1ZB</h4></div>
-                    <div><div id = 'h_sub1_left2_c3'><i class="fa-solid fa-check-to-slot"></i></div><h4>Verified</h4><p>Supplier</p></div>
-                    <div><div class = 'h_sub1_left2_c1'><i class="fa-solid fa-thumbs-up"></i></div><p>4.2/5★★★★★</p></div>
-                </div>
-                
-            </div>
-            
-        </div>
-        <div><button class = 'h_sub1_btn'>View Mobile Number</button></div>
-    </div>
-    <div id = 'h_sub2'>
-        <div id="h_sub2_left">
-            <div><h3>Home</h3></div>
-            <div><h3>Products & Services</h3></div>
-            <div><h3>About Us</h3></div>
-            <div><h3>Contact Us</h3></div>
-        </div>
-        <div><button class = 'h_sub2_btn'>Send Email</button></div>
-    </div>
-</div>`;
-}
-
 const footer = () => {
-    return `<div id="f_start">Get in touch with us</div>
+  return `<div id="f_start">Get in touch with us</div>
     <div id = 'f_detail'>
         <div id = 'f_company'>
             <h1>Our Company</h1>
@@ -69,18 +37,15 @@ const footer = () => {
         <div id = 'f_message'>
             Leave a Message, we will call you back!
             <div id = 'f_phone'>
-                <h5>Mobile Number</h5>
-                <div id = 'f_phone1'>
-                    <select name="" id="f_flag">
-                        <option value="">🏁</option>
-                        <option value="">🏳️</option>
-                        <option value=""></option>
-                        <option value=""></option>
-                    </select>
-                    <input type='text' readonly value = '+91'>
-                    <input type="number" placeholder="Enter your mobile">
-                </div>
-                
+                <h5>Mobile Number</h5><br>
+                <select name="" id="f_flag">
+                    <option value="">🏁</option>
+                    <option value="">🏳️</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+                <input type='text' readonly value = '+91'>
+                <input type="number" placeholder="Enter your mobile">
             </div>
             <div id = 'f_details'>
                 <h5>Requirement Details</h5>
@@ -159,7 +124,6 @@ const footer = () => {
     </div>
     
     
-    
     <div id = 'f_submit_pop'>
         <div id = 'f_submit_pop1'>
             <div><img src="https://3.imimg.com/data3/HJ/OY/MY-3792183/blue-heaven-cosmetics-private-limited-logo-120x120.jpg" alt=""></div>
@@ -167,7 +131,7 @@ const footer = () => {
             <h3>Sold By - Blue Heaven Cosmetics (P) Ltd, New Delhi, Delhi</h3>
         </div>
         <div id = 'f_submit_pop2'>
-            <h1>Connect with "Blue Heaven Cosmetics (P) Ltd"</h1>
+            <h1>Connect with "Blue Heaven Cosmetics  <span class="close12">+</span> (P) Ltd"</h1>
             <h5>Mobile Number</h5>
             <div>
                 <select name="" id="">
@@ -184,57 +148,8 @@ const footer = () => {
             </div>
             <button class = 'f_sms'>Submit</button>
         </div>
-    </div>`;
-}
-
-
-const main_footer = () => {
-    return `<div id = 'main_footer'>
-    <div id = 'f_upper'>
-        <div><h3>We are here to help you!</h3></div>
-        <div id = 'f_upper_right'>
-            <h5>Go Mobile: <i class="fa-brands fa-apple"></i> <i class="fa-solid fa-robot"></i> <i class="fa-solid fa-mobile-screen-button"></i></h5>
-            <h5>Follow us on: <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter-square"></i> <i class="fa-brands fa-linkedin"></i></h5>
-        </div>
     </div>
-    <div id = 'f_lower'>
-        <div>
-            <a href="">About Us</a>
-            <a href="">About Us</a>
-            <a href="">About Us</a>
-            <a href="">About Us</a>
-            <a href="">About Us</a>
-            <a href="">About Us</a>
-        </div>
-        <div>
-            <a href="">Help</a>
-            <a href="">Help</a>
-            <a href="">Help</a>
-            <a href="">Help</a>
-            <a href="">Help</a>
-            <a href="">Help</a>
-        </div>
-        <div>
-            <a href="">Suppliers Tool Kit</a>
-            <a href="">Sell on IndiaMART</a>
-            <a href="">Sell on IndiaMART</a>
-            <a href="">Sell on IndiaMART</a>
-        </div>
-        <div>
-            <a href="">Buyers Tool Kit</a>
-            <a href="">Post your requirement</a>
-            <a href="">Post your requirement</a>
-            <a href="">Post your requirement</a>
-            <a href="">Post your requirement</a>
-        </div>
-        <div>
-            <a href="">Events</a>
-            <a href="">Trade Shows</a>
-            <a href="">Trade Shows</a>
-            <a href="">Trade Shows</a>
-        </div>
-    </div>
-</div>`;
-}
-
-export {subHead, footer, main_footer};
+    
+   `;
+};
+export default footer;

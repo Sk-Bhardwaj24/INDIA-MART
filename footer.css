@@ -1,0 +1,257 @@
+* {
+  /* margin: 0; */
+  /* padding: 0; */
+  /* box-sizing: border-box; */
+  font-family: sans-serif;
+}
+
+#footer {
+  max-width: 85%;
+  margin: auto;
+  /* box-sizing: border-box; */
+}
+
+#f_start {
+  background-color: rgb(45, 49, 146);
+  color: white;
+  font-size: 1.6rem;
+  padding: 0.6rem;
+  font-weight: 700;
+}
+
+#f_detail {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 1rem;
+  background-color: rgb(248, 248, 248);
+}
+
+#f_detail > div {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+  font-size: 1rem;
+}
+
+#f_detail h1 {
+  font-size: 1.6rem;
+}
+
+#f_detail a {
+  text-decoration: none;
+  color: black;
+}
+
+#f_company {
+  position: relative;
+}
+
+#f_add_box {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#f_share {
+  position: absolute;
+  bottom: 0;
+}
+
+#f_direction {
+  color: #4996e8 !important;
+  /* border: 2px solid red; */
+  font-size: small;
+}
+
+.f_sms,
+.f_email {
+  height: 2.5rem;
+  width: 10rem;
+}
+
+.f_sms {
+  background-color: #00a699;
+  border: 1px solid #038379;
+  color: white;
+  cursor: pointer;
+}
+
+.f_email {
+  border: 1px solid #02a699;
+  color: #02a699;
+  background-color: white;
+  cursor: pointer;
+}
+
+#f_message {
+  background-color: white;
+  border: 2px solid rgb(234, 234, 234);
+  padding: 0.5rem 2rem;
+}
+
+#f_message > div {
+  margin: 1rem 0rem;
+  /* border: 1px solid #02a699; */
+}
+
+#f_message input {
+  height: 3rem;
+  width: 100%;
+}
+
+#f_phone,
+#f_details {
+  /* border: 1px solid green; */
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#f_phone select,
+#f_phone input:nth-child(4) {
+  /* border: 1px solid red; */
+  height: 3rem;
+  flex: 0.5;
+  min-width: 3rem;
+  max-width: 3rem;
+}
+
+#f_phone input {
+  /* border: 1px solid red; */
+  flex: 3;
+}
+
+#f_phone h5,
+#f_details h5 {
+  /* border: 1px solid red; */
+  position: absolute;
+  font-weight: 400;
+  top: 0.3rem;
+  left: 1rem;
+  z-index: 2;
+  background-color: white;
+  padding: 0rem 0.5rem;
+  text-align: center;
+}
+
+#f_message button {
+  margin: 0.5rem;
+  width: 10rem;
+  margin: auto;
+  height: 2.5rem;
+}
+
+#f_box {
+  display: flex;
+}
+
+#f_2foot {
+  padding: 2rem;
+}
+
+#f_box {
+  margin-top: 1rem;
+}
+.f_card {
+  /* border: 2px solid red; */
+  max-width: 8rem;
+  margin-right: 0.5rem;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  background-color: #e9eaec;
+}
+
+.f_card img {
+  width: 100%;
+  max-height: 8rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.f_card div {
+  margin: 0.5rem;
+  line-height: 1.3rem;
+}
+
+.f_card div h3 {
+  font-size: 15px;
+}
+
+.f_blue {
+  color: #2e3192;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.f_card .f_sms a {
+  color: white;
+  text-decoration: none;
+}
+
+.f_card .f_sms {
+  width: 100%;
+  border-radius: 2rem;
+  height: 1.5rem;
+}
+
+.f_company {
+  color: black;
+  text-decoration: none;
+  font-size: small;
+}
+
+#f_3foot {
+  position: relative;
+}
+#f_verified {
+  position: absolute;
+  left: 15rem;
+  border: 1px solid indigo;
+  width: 35rem;
+  height: 30rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px 4px grey;
+}
+
+.f_verified_box {
+  display: flex;
+}
+
+/* --------------------------------------------------------------------------- */
+
+#f_submit_pop {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  width: 50rem;
+  height: 30rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  background: white;
+  z-index: 5;
+  border-radius: 5px;
+}
+
+#f_submit_pop1 {
+  border: 2px solid red;
+  /* max-width: 30%; */
+  padding: 1rem;
+  flex: 1;
+  background-color: #f8f8f8;
+}
+
+#f_submit_pop1 div {
+  padding: 2.5rem;
+}
+#f_submit_pop2 {
+  border: 2px solid green;
+  flex: 3;
+  /* max-width: 60%; */
+}
