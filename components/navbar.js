@@ -116,7 +116,9 @@ const navbar = () => {
     
             <div id="signinpopup">
               <div id="signinpopup1">
+              <div id="remb">
                 <button  onclick="displaysign()">Sign In</button>
+                </div>
                 <p  id="signcomment">New to IndiaMART? &nbsp Join Now</p>
               </div>
               <div id="hrline"></div>
@@ -168,7 +170,7 @@ const navbar = () => {
          
         </div>
         <!-- <div class="close">+</div> -->
-       
+        <p id="mobno">Mobile Number</p>
          <div id="modal-div2">
          <div id="modal1" >
          <div class="selector">
@@ -257,4 +259,5 @@ const navbar = () => {
       </div>
     </div>`;
 };
+
 export default navbar;

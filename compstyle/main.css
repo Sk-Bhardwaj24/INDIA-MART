@@ -2,10 +2,10 @@
   display: flex;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
-  position: absolute;
+  position: fixed;
   height: 35px;
   top: 0px;
-  /* z-index: 1; */
+  z-index: 1;
   background-color: rgb(46, 49, 146);
   min-width: 100%;
 }
@@ -59,7 +59,7 @@
 #nav23 {
   width: 21%;
   max-width: 100px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
   margin-left: 2rem;
   background-color: #fff;
   border-radius: 3px;
@@ -155,7 +155,7 @@
   font: 14px/1.3 Arial, Helvetica, sans-serif;
   padding-left: 25px;
   letter-spacing: 0.4px;
-  width: 7vw;
+  width: 7.5vw;
   margin-top: 0vh;
   background: url(./image/search.png);
   background-repeat: no-repeat;
@@ -299,6 +299,9 @@
   line-height: 25px;
   padding: 0px;
   margin-top: 0px;
+}
+#covidpopup li:hover {
+  background-color: gray;
 }
 #linebold1::before {
   background: url(./image/safety.png);
@@ -533,7 +536,7 @@
   margin: 0 auto 0 auto;
   text-align: center;
 }
-#signinpopup1 > button {
+#signinpopup1 button {
   width: 6rem;
   align-items: center;
   height: 2rem;
@@ -701,6 +704,7 @@
   /* margin-top: 25%; */
   position: fixed;
   top: 0;
+  z-index: 10;
   display: none;
   /* display: flex; */
   justify-content: center;
@@ -716,7 +720,7 @@
 
 .modal-contents {
   margin-top: -30px;
-  height: 310px;
+  height: 330px;
   width: 460px;
   background-color: white;
   text-align: center;
@@ -923,6 +927,13 @@ input:focus {
   display: grid;
   grid-template-columns: 17% 83%;
   background-color: rgb(70, 133, 245);
+}
+#mobno {
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: -30px;
+  padding-left: 22px;
+  padding-bottom: -20px;
 }
 #s-d-g1 {
   background-color: white;

@@ -116,7 +116,17 @@ function submitsign() {
     alert("please register first");
   }
   closesign();
-  resu.textContent = "Team six";
+  // resu.textContent = "Team six";
+
+  let remb = document.getElementById("remb");
+  remb.innerHTML = "";
+  let ps = document.createElement("h4");
+
+  let ps1 = document.createElement("p");
+  ps1.setAttribute("style", "color:blue");
+  ps.textContent = "Hi Team six";
+  ps1.textContent = "Profile";
+  remb.append(ps, ps1);
 }
 
 // document.querySelector(".signopen").addEventListener("click", function () {

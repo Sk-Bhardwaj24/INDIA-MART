@@ -4,40 +4,149 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/image/fevicolon.png" />
     <link rel="stylesheet" href="./compstyle/main.css" id="rel" />
-    <!-- <script src="./scriptspopup.js"></script> -->
-    <title>Document</title>
+    <link rel="stylesheet" href="./compstyle/home.css" id="rel" />
+    <link rel="stylesheet" href="./compstyle/footer.css" id="rel" />
+    <link rel="stylesheet" href="./compstyle/subnav.css" id="rel" />
+    <script src="./scriptspopup.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a982eeda10.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Blue Heaven Cosmetics (P) Ltd</title>
     <style>
       body {
+        background-color: #e9eaec;
         margin: 0px;
       }
       #header {
         position: sticky;
         top: 0px;
       }
-      img {
-        /* float: left; */
-        height: 400px;
-        width: 400px;
+      #mar-t {
+        margin: 7% 6.5% 5% 6.5%;
+        background-color: white;
+        padding-bottom: 70px;
       }
-      #main2 {
-        display: flex;
-        flex-direction: column;
-        gap: 80px;
-        padding: 40px;
+      #footer2 {
+        margin-top: 40px;
+      }
+      #subnav {
+        padding-top: 0px;
+        margin-top: -50px;
+        max-height: 130px;
+        box-sizing: border-box;
+        /* top: 50px; */
+        /* position: sticky;
+        top: 0px; */
+        z-index: 0;
+        background-color: white;
       }
     </style>
   </head>
-
   <body>
-    <div id="header"></div>
-  </body>
-</html>
-<script type="module">
-  import navbar from "./components/navbar.js";
+    <div id="header5"></div>
+    <div id="mar-t">
+      <div id="subnav"></div>
+      <!-- ***************************************************************************************************** -->
+      <div id="ho_about_main">
+        <div id="ho_about">
+          <h1>About Us</h1>
+          <p>
+            Blue Heaven Cosmetics was started in 1974 by two young brothers,
+            company MD's Mr.Charanjit Singh and Mr. Gurnam Singh with big dreams
+            and ambitions.
+          </p>
+          <p>
+            By virtue of their determination and commitment Blue Heaven
+            Cosmetics has been able to experience such an eventful journey
+            revolutionizing the Indian decorative cosmetics industry.
+          </p>
+          <a href="">+Read More</a>
+        </div>
+        <div id="ho_line">
+          <div class="ho_line1">
+            <div class="ho_line_box">
+              <div><i class="fa-solid fa-hand-holding-dollar"></i></div>
+              <div>
+                <p>Nature of Business</p>
+                <h3>Exporter and Manufacturer</h3>
+              </div>
+            </div>
+            <div class="ho_line_box">
+              <div><i class="fa-solid fa-building"></i></div>
+              <div>
+                <p>Year of Establishment</p>
+                <h3>1974</h3>
+              </div>
+            </div>
+            <div class="ho_line_box">
+              <div><i class="fa-solid fa-scale-balanced"></i></div>
+              <div>
+                <p>Legal Status of Firm</p>
+                <h3>Limited Company (Ltd./Pvt.Ltd.)</h3>
+              </div>
+            </div>
+            <div class="ho_line_box">
+              <div><i class="fa-solid fa-chart-line"></i></div>
+              <div>
+                <p>Annual Turnover</p>
+                <h3>Rs. 50 - 100 Crore</h3>
+              </div>
+            </div>
+          </div>
+          <div class="ho_line1">
+            <div class="ho_line_box">
+              <div><i class="fa-solid fa-chart-line"></i></div>
+              <div>
+                <p>Import Export Code (IEC)</p>
+                <h3>05040*****</h3>
+              </div>
+            </div>
+            <div class="ho_line_box">
+              <div><i class="fa-solid fa-file-invoice"></i></div>
+              <div>
+                <p>GST Number</p>
+                <h3>07AACCB1155C1ZB</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ******************************************************************************************************************** -->
+      <div id="footer2"></div>
+    </div>
 
-  // import { closeopen } from "./components/scriptspopup.js";
-  let head = document.getElementById("header");
-  head.innerHTML = navbar();
-</script>
+    <div id="lower"></div>
+    <!-- <img src="./image/america.png" />
+    <img src="./image/china.png" />
+    <img src="./image/canada.png" /> -->
+  </body>
+  <script type="module">
+    import navbar from "./components/navbar.js";
+    import footer from "./components/footer.js";
+    import subHead from "./components/subnavbar.js";
+    import { lfooter } from "./components/lowerfooter.js";
+    let head1 = document.getElementById("header5");
+    head1.innerHTML = navbar();
+    let sub = document.getElementById("subnav");
+    sub.innerHTML = subHead();
+    let foot2 = document.getElementById("footer2");
+    foot2.innerHTML = footer();
+    let lower = document.getElementById("lower");
+    lower.innerHTML = lfooter();
+
+    document.querySelector(".f_sms").addEventListener("click", function () {
+      document.querySelector("#f_submit_pop").style.display = "flex";
+      let f_submit_pop = document.getElementById("f_submit_pop");
+      f_submit_pop.style.visibility = "visible";
+    });
+
+    document.querySelector(".close12").addEventListener("click", function () {
+      let f_submit_pop = document.getElementById("f_submit_pop");
+      f_submit_pop.style.visibility = "hidden";
+    });
+  </script>
+</html>
 <script src="./components/main.js"></script>
