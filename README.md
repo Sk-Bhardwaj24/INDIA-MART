@@ -34,5 +34,9 @@
 
 <h2 align="center">Product & service</h2>
     <h4>Here user can see the product and can send their requirement</h4>
-    <img src="./Readmeimg/project1.png" width="100%"/>
-    <img src="./Readmeimg/project2.png" width="100%"/>
+
+      <!-- <img src="./Readmeimg/p1.png" width="100%"/> -->
+      <!-- <img src="./Readmeimg/p2.png" width="100%"/> -->
+
+   <img src="./ReadmeImg/p1.png" width="100%"/>
+    <img src="./ReadmeImg/p2.png" width="100%"/>
